@@ -1,0 +1,22 @@
+name: unit-tests
+
+on:
+  push:
+    branches: [ abhipth-patch-1, master ]
+  pull_request:
+    branches: [ abhipth-patch-1, master ]
+
+jobs:
+
+  build:
+    name: unit-tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.15
+    - name: Unit Tests
+      run: make test
