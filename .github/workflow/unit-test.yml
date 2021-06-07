@@ -2,9 +2,9 @@ name: unit-tests
 
 on:
   push:
-    branches: [ abhipth-patch-1 ]
+    branches: [ master ]
   pull_request:
-    branches: [ abhipth-patch-1 ]
+    branches: [ master ]
 
 jobs:
 
