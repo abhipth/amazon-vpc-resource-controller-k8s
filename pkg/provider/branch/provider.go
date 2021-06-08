@@ -482,3 +482,4 @@ func (b *branchENIProvider) IsInstanceSupported(instance ec2.EC2Instance) bool {
 	}
 	return false
 }
+ 
