@@ -19,7 +19,7 @@ all: controller
 
 # Run tests
 test: generate fmt vet manifests
-	go test ./pkg/... ./controllers/... ./webhooks/... -coverprofile cover.out
+	go test ./pkg/... ./controllers/... ./webhook/... -coverprofile cover.out
 
 # Build controller binary
 controller: generate fmt vet
